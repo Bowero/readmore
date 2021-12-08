@@ -25,7 +25,11 @@ export default function Home({ books }) {
         <div className={styles.grid}>
           {/* Map over books and create card for every book */}
           {books.map(book => (
-            <a href={book.url} className={styles.card} key={book.title} target="_blank">
+            <a
+              href={book.url} className={styles.card} key={book.title}
+              target="_blank"
+              rel="noreferrer"
+            >
               {/* TODO: fix URL */}
               <img
                 src={urlFor(book.cover).url()}

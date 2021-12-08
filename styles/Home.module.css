@@ -92,6 +92,21 @@
   font-size: 1.25rem;
 }
 
+.card .price {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.card .free {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background: #0070f3;
+  color: #fff;
+  border-radius: 5px;
+}
+
 .card p {
   margin: 0;
   font-size: 1.25rem;

@@ -66,8 +66,9 @@ const query = groq`
 
 export async function getStaticProps() {
   const books = await getClient().fetch(query)
-
-  console.log(books)
+  
+  // Randomnize the order of books
+  books.sort(() => Math.random() - 0.5)
 
   return {
     props: {
